@@ -1,0 +1,29 @@
+extends templates/layout.pug
+
+block title
+    title Home Page
+
+block navbar
+    include templates/navbar.pug
+
+block content
+    main(class="bg-[#569bf5] py-20 p-5")
+        section(class="card w-[75vw] min-h-[50vh] max-w-md m-auto py-8 px-4 flex flex-col gap-4 justify-between")
+            section(class="card-header")
+                h1(class="text-4xl text-center p-4 font-lobster") AlegreCode
+                p(class="text-xl text-center p-4 font-poiret-one") 
+                    | This web development workflow uses the following technologies.
+            section(class="card-body") 
+                h3(class="text-2xl text-center p-4 font-lobster") 
+                    | Pug, Tailwindcss, JS
+                img(class="m-auto mb-3" src="https://skillicons.dev/icons?i=pug,tailwindcss,js", alt="iconos")
+            section(class="card-footer")
+                p(class="text-lg px-4 pt-4 font-poiret-one text-center")
+                    | &#x1F604; &#x1F60E; I hope to help you make your projects faster and easier. &#x1F4AA;
+                p(class="text-lg px-4 pb-4 font-poiret-one text-center")
+                    | &#x1F44B;Greetings!!!
+                
+block footer 
+    footer(class="bg-neutral-800 py-5 font-poiret-one")
+        p(class="text-white text-center") 
+            | Carlos Alberto Alegre &copy; - 2022 

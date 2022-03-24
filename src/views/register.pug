@@ -1,0 +1,27 @@
+extends templates/layout.pug
+
+block title
+    title Register Page
+
+block navbar
+    include templates/navbar.pug
+
+block content
+    main(class="bg-[#569bf5] py-20 p-5")
+        section(class="card w-[75vw] min-h-[50vh] max-w-md m-auto py-8 px-4 flex flex-col gap-4 justify-between")
+            section(class="card-header")
+                h1(class="text-4xl text-center p-4 font-lobster") AlegreCode
+                p(class="text-xl text-center p-4 font-poiret-one") Sign Up
+            section(class="card-body")
+                form(action="", method="post" class="p-6 font-poiret-one flex flex-wrap gap-4") 
+                    input#firstname(type="text", name="firstname", placeholder="Firstname..." class="text-lg px-4 py-2 bg-transparent text-black font-semibold placeholder:text-white outline-none form-input w-full lg:max-w-[47%]")
+                    input#lastname(type="text", name="lastname", placeholder="Lastname..." class="text-lg px-4 py-2 bg-transparent text-black font-semibold placeholder:text-white outline-none form-input w-full lg:max-w-[47%] ml-auto")
+                    input#email(type="email", name="email", placeholder="Email..." class="text-lg px-4 py-2 bg-transparent text-black font-semibold placeholder:text-white outline-none form-input w-full")
+                    input#password(type="password", name="password", placeholder="Password..." class="text-lg px-4 py-2 bg-transparent text-black font-semibold placeholder:text-white outline-none form-input w-full lg:max-w-[47%]")
+                    input#confirm-password(type="password", name="confirm-password", placeholder="Confirm password..." class="text-lg px-4 py-2 bg-transparent text-black font-semibold placeholder:text-white outline-none form-input w-full lg:max-w-[47%] ml-auto")
+                    input(type="submit", value="Send" class="form-btn text-white py-2 px-4 cursor-pointer font-semibold ml-auto")
+                
+block footer 
+    footer(class="bg-neutral-800 py-5 font-poiret-one")
+        p(class="text-white text-center") 
+            | Carlos Alberto Alegre &copy; - 2022 

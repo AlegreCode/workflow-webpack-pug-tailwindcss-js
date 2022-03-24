@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+    overflow: hidden;
+    height: 0vh;
+    transition: all .4s ease-in-out;
+}
+#toggle:checked ~ .navbar {
+    height: calc(40px * 3);
+}
+
+.card {
+    border-radius: 10px;
+    background: linear-gradient(145deg, #4da1be, #5bc0e2);
+    box-shadow:  27px 27px 54px #438da7,
+                -27px -27px 54px #67d9ff;
+}
+
+.card-header, .card-body, .card-footer {
+    border-radius: 10px;
+    background: #569bf5;
+    box-shadow: inset 8px 8px 16px #447ac2,
+                inset -8px -8px 16px #68bcff;
+}
+
+.form-input {
+    border-radius: 5px;
+    background: #569BF5;
+    box-shadow: inset 8px 8px 16px #3e70b0,
+                inset -8px -8px 16px #6ec6ff;
+}
+
+.form-input:focus {
+    border-radius: 5px;
+    background: #569BF5;
+    box-shadow: inset -8px -8px 16px #3e70b0,
+                inset 8px 8px 16px #6ec6ff;
+}
+
+.form-btn {
+    border-radius: 5px;
+    background: #569BF5;
+    box-shadow:  9px 9px 18px #4176ba,
+                 -9px -9px 18px #6bc0ff;
+}
+
+.form-btn:hover {
+    border-radius: 5px;
+    background: #569BF5;
+    box-shadow: inset 5px 5px 10px #4176ba,
+                inset -5px -5px 10px #6bc0ff;
+}
+
+.navbar-item:hover {
+    border-radius: 5px;
+    background: #6366F1;
+    box-shadow: inset 5px 5px 10px #4b4eb7,
+                inset -5px -5px 10px #7b7eff;
+}
+
+@media screen and (min-width:1024px) {
+    .navbar {
+        height: auto;
+        position: static;
+    }    
+}
